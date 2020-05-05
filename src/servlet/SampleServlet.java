@@ -40,7 +40,7 @@ public class SampleServlet extends HttpServlet {
 		out.println("<title>おみくじ</title>");
 		out.println("</head>");
 		out.println("<body>");
-		out.println("<p>" + today +"の運勢は「" + luck + "」です!</p>");
+		out.println("<p>サーブレットです。" + today +"の運勢は「" + luck + "」です!</p>");
 		out.println("</body>");
 		out.println("</html>");
 	}

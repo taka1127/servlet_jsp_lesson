@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.f1{
+	height: 200px;
+	width:  500px;
+	background-color: yellow;
+	margin: 0 auto;
+}
+h1{
+	color: red;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.p1{
+	font-family: sans-serif;
+	color:#00ffff;
+}

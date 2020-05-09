@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
 @WebServlet("/RegisterUser")
 public class RegisterUser extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -34,7 +33,7 @@ public class RegisterUser extends HttpServlet {
 
 			//登録処理の呼び出し
 			RegisterUserLogic logic = new RegisterUserLogic();
-			logic.excute(registerUser);
+			logic.execute(registerUser);
 
 			//不要になったセッションスコープ内のインスタンスを削除
 			session.removeAttribute("registerUser");
@@ -67,7 +66,7 @@ public class RegisterUser extends HttpServlet {
 		session.setAttribute("registerUser", registerUser);
 
 		//フォワード
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/registerConfirm.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/registerConfirm.jsp");
 		dispatcher.forward(request, response);
 	}
 

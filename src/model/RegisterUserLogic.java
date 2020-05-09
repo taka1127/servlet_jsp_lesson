@@ -1,9 +1,9 @@
 package model;
 
 public class RegisterUserLogic {
-	
-	public boolean excute(User user) {
-		
+
+	public boolean execute(User user) {
+
 		return true;
 	}
 

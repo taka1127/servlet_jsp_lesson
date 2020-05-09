@@ -65,6 +65,10 @@ public class RegisterUser extends HttpServlet {
 		//セッションスコープに登録ユーザーを保存
 		HttpSession session = request.getSession();
 		session.setAttribute("registerUser", registerUser);
+
+		//フォワード
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/registerConfirm.jsp");
+		dispatcher.forward(request, response);
 	}
 
 }

@@ -2,7 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ page import="ex.Fruit" %>
 <%-- Fruit f = (Fruit)request.getAttribute("fruit"); --%>
-<% Fruit f = (Fruit)session.getAttribute("fruit"); %>
+<%-- Fruit f = (Fruit)session.getAttribute("fruit"); --%>
+<% Fruit f = (Fruit)application.getAttribute("fruit"); %>
 
 <!DOCTYPE html>
 <html>

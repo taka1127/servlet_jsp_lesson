@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="ex.Fruit" %>
-<% Fruit f = (Fruit)request.getAttribute("fruit"); %>
+<%-- Fruit f = (Fruit)request.getAttribute("fruit"); --%>
+<% Fruit f = (Fruit)session.getAttribute("fruit"); %>
 
 <!DOCTYPE html>
 <html>

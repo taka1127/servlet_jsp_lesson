@@ -3,7 +3,7 @@
 <%@ page import="ex.Fruit" %>
 <%-- Fruit f = (Fruit)request.getAttribute("fruit"); --%>
 <%-- Fruit f = (Fruit)session.getAttribute("fruit"); --%>
-<% Fruit f = (Fruit)application.getAttribute("fruit"); %>
+<%-- Fruit f = (Fruit)application.getAttribute("fruit"); --%>
 
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p><%= f.getName() %>の値段は<%= f.getPrice() %></p>
-<p><%= f.getClass() %></p>
+<p>${applicationScope.fruit.name }の値段は${applicationScope.fruit.price }円です。</p>
 </body>
 </html>

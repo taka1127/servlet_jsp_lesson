@@ -39,5 +39,6 @@ public class SelectEmployeeSample {
 		  System.out.println("名前:" + emp.getName());
 		  System.out.println("年齢:" + emp.getAge());
 	  }
+	 
   }
 }
